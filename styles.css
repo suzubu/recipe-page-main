@@ -81,8 +81,8 @@ img {
 
 .intro h1 {
   color: var(--stone-900);
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  padding: 0.25rem 0;
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  padding: 1.5rem 0;
 }
 .intro p {
   font-size: 0.65rem;
