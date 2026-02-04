@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+:root {
+  --white: #fff;
+  --stone-100: #f3e6d8;
+  --stone-150: #e4ded8;
+  --stone-600: #5f574e;
+  --stone-900: #302d2c;
+  --brown-800: #854632;
+  --rose-50: #fff5fa;
+  --rose-800: #7b284f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 0.95rem;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  background-color: var(--stone-100);
+  color: var(--stone-600);
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+
+h2 {
+  color: var(--brown-800);
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+section {
+  padding: 0.85rem 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--stone-150);
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 30rem;
+  padding: 2rem 2rem 0 2rem;
+  margin: 3rem;
+  border-radius: 15px;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.intro {
+  padding: 1.5rem 0;
+}
+
+.intro h1 {
+  color: var(--stone-900);
+  font-size: 1.75rem;
+  padding: 1.5rem 0;
+}
+.intro p {
+  font-size: 0.65rem;
+}
+
+.prep-time {
+  background-color: var(--rose-50);
+  /* margin: 2rem; */
+  padding: 1rem;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.prep-time h3 {
+  font-size: 0.85rem;
+  color: var(--rose-800);
+  font-weight: 600;
+  padding: 0 0 0.75rem 0;
+}
+
+.prep-time ul,
+.ingredients ul {
+  font-size: 0.65rem;
+  list-style-position: inside;
+  line-height: 1.5rem;
+}
+
+.ingredients {
+  padding-top: 1.5rem;
+}
+
+.instructions ol {
+  font-size: 0.65rem;
+  list-style-position: outside;
+  padding-left: 1rem;
+}
+
+.instructions ol li {
+  padding-left: 0.5rem;
+  padding: 0.15rem 0.15rem 0.15rem 0.75rem;
+}
+.instructions ol li::marker {
+  font-family: "Outfit", sans-serif;
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+.nutrition {
+  font-size: 0.65rem;
+  width: 100%;
+}
+
+.nutrition p {
+  padding: 0.75rem 0;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table td:last-child {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    display: block;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  .card {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .hero-img {
+    border-radius: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  section,
+  .prep-time {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .prep-time {
+    width: calc(100% - 3rem);
+  }
+
+  section:first-of-type {
+    padding-top: 1.5rem;
+  }
+
+  .intro h1 {
+    line-height: 1.2;
+  }
+
+  hr {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  table {
+    margin-right: 1.5rem;
+    width: calc(100% - 3rem);
+  }
+
+  table td {
+    padding: 0.5rem;
+  }
+}
