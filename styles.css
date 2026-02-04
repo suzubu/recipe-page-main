@@ -18,8 +18,7 @@
 }
 
 html {
-  font-size: 16px;
-  line-height: 0.95rem;
+  font-size: 100%;
 }
 
 body {
@@ -82,8 +81,8 @@ img {
 
 .intro h1 {
   color: var(--stone-900);
-  font-size: 1.75rem;
-  padding: 1.5rem 0;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 0.25rem 0;
 }
 .intro p {
   font-size: 0.65rem;
@@ -91,7 +90,6 @@ img {
 
 .prep-time {
   background-color: var(--rose-50);
-  /* margin: 2rem; */
   padding: 1rem;
   width: 100%;
   border-radius: 15px;
@@ -122,9 +120,10 @@ img {
 }
 
 .instructions ol li {
-  padding-left: 0.5rem;
-  padding: 0.15rem 0.15rem 0.15rem 0.75rem;
+  padding: 0.15rem 0 0.15rem 0.75rem;
+  line-height: 0.95rem;
 }
+
 .instructions ol li::marker {
   font-family: "Outfit", sans-serif;
   color: var(--brown-800);
@@ -149,16 +148,16 @@ table td {
   border-bottom: 1px solid var(--stone-150);
 }
 
-table tr:last-child td {
-  border-bottom: none;
-}
-
 table td:last-child {
   color: var(--brown-800);
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
+table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 48em) {
   html {
     overflow-x: hidden;
   }
@@ -179,11 +178,6 @@ table td:last-child {
 
   .hero-img {
     border-radius: 0;
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
   }
 
   section,
